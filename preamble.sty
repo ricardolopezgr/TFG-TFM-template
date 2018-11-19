@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper,twoside,openright]{report} 
+%
+%
+%
+% MÁRGENES
+\usepackage[top=3.0cm, bottom=2.5cm, right=1.75cm,left=3.0cm,asymmetric]{geometry}
+%
+%
+%
+% PAQUETEs DE FUENTES Y ESTILOS
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{courier}
+\frenchspacing 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+%
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\usepackage{appendix}
+%
+%
+%
+% ENCABEZADO Y PIE DE PÁGINA
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+\headheight=1.0cm
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\rhead{ \begin{picture}(0,0) \put(-30,-15){\includegraphics[width=2.2cm]{photos/etsin.png}} \end{picture}}
+\lhead{\begin{picture}(0,0) \put(-60,-1){\includegraphics[width=3.5cm]{photos/poli.png}} \end{picture}}
+\chead{hola}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{}
+\fancyhf{} 
+\fancyhead[C]{\vfill \MakeUppercase \leftmark}
+\rhead{ \begin{picture}(0,0) 		  \put(-30,-15){\includegraphics[width=2.2cm]{images/template/etsin.png}} \end{picture}}
+\lhead{\begin{picture}(0,0) \put(-60,-1){\includegraphics[width=3.5cm]{images/template/poli.png}} \end{picture}}
+\fancyfoot[C]{\thepage} 
+%
+%
+%
+% PAQUETES DE IMÁGENES
+\usepackage{graphicx} % Para poner gráficos
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{epsf}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+%
+%
+%
+% ENLACES DENTRO DEL DOCUMENTO
+\usepackage{booktabs}
+\usepackage{xcolor}	
+\usepackage{subfigure}
+\usepackage{mdframed}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true,
+	linkcolor 	 = blue,
+	urlcolor     = blue,
+	citecolor    = blue
+}
+%
+%
+%
+% MISCELÁNEO
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{pdfpages}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{cite} 
+\usepackage{gensymb}
+%
+%
+%
+% EXPRESIONES MATEMÁTICAS
+\usepackage{amsmath,amssymb,amsfonts,latexsym,cancel} 
+\usepackage[math]{blindtext}
+%
+%
+%
+% PAQUETES PARA RENOMBRAR A CASTELLANO LOS ELEMENTOS (NO TODOS SON SIEMPRE NECESARIOS)
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\spanishtablename}{Tabla}
+\renewcommand{\spanishlistfigurename}{Lista de figuras}
+\renewcommand{\spanishlisttablename}{Lísta de tablas}
+%\renewcommand{\contentsname}{Contenido}
+%\renewcommand{\partname}{Parte}
+%\renewcommand{\abstractname}{Resumen}
+%\renewcommand{\refname}{Bibliografía}
+%\renewcommand{\figurename}{Figura}
+%
+%
+%
+% INTRODUCIR CÓDIGOS 
+\usepackage{listings}
+\usepackage{showexpl}[rframe=none]
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+  language=[LaTeX]TeX,                 
+  basicstyle=\small \ttfamily,
+  numbers=left,                   
+  numberstyle=\tiny\color{gray},   
+  stepnumber=1,                    
+  numbersep=5pt,                   
+  backgroundcolor=\color{white}, 
+  showspaces=false,                
+  showstringspaces=false,        
+  showtabs=false,                  
+  frame=single,                   
+  rulecolor=\color{black},        
+  tabsize=4,                     
+  captionpos=b,                 
+  breaklines=true,               
+  breakatwhitespace=false,       
+  keywordstyle=\bfseries \color{blue},         
+  commentstyle=\color{dkgreen},      
+  stringstyle=\color{mauve},        
+  escapeinside={\%*}{*)},          
+  morekeywords={*,...}                
+}

@@ -1,0 +1,65 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = es_ES
+
+% Plantilla para el Trabajo de Fin de Grado/Máster de la Escuela Técnica 
+% Superior de Ingenieros Navales de la Universidad Politécnica de Madrid.
+% Esta plantilla está basada en la propuesta por el centro 
+% en su página web en formato Microsoft Word.
+% 
+% Los planes para los que es aplicable son:
+% - GRADO EN ARQUITECTURA NAVAL (GAN - XXX)
+% - GRADO EN INGENIERÍA MARÍTIMA (GIM - XXX)
+% - MÁSTER EN INGENIERÍA NAVAL Y OCEÁNICA (MINO - XXX)
+% 
+% ricardo.lopezg@alumnos.upm.es
+% noviembre 2018
+%
+% PARA SIMPLIFICAR, EL PREÁMBULO ES UN DOCUMENTO SEPARADO
+\input{preamble.sty}
+
+% INFORMACIÓN DEL DOCUMENTO (ACTUALIZA PORTADA)
+\def\myauthor{(NOMBRE DEL AUTOR)}
+\def\mytutor{(NOMBRE DEL TUTOR)}
+\def\mycotutor{(NOMBRE DEL CO-TUTOR)}
+\def\mydegree{GRADO EN \\ ARQUITECTURA NAVAL}
+\def\mycode{GAN - XXX}
+\def\mytitle{(TÍTULO DEL TRABAJO)}
+\def\mydate{(MES Y AÑO DE LA PRESENTACIÓN)}
+	
+\begin{document}
+	% PORTADA
+	\include{portada} 
+	% DEDICATORIA, ABSTRACT, ESPECIFICACIONES, ETC. CON PÁGINAS EN NÚMEROS ROMANOS
+	\setcounter{page}{0}
+	\pagenumbering{roman}
+	\include{dedicatoria}
+	\include{especificaciones}
+	\include{resumen}
+	\include{abstract}
+	\include{agradecimientos}
+	{\hypersetup{linkcolor=black}
+	\tableofcontents
+	\listoffigures	
+	\listoftables
+	}
+	% EL RESTO DE PÁGINAS EN NUMERACIÓN COMÚN
+	\setcounter{page}{0}
+	\pagenumbering{arabic}
+	\include{Capitulo1}
+    \include{Capitulo2}
+    \include{Infobiblio}
+	% INCLUIR LOS CAPÍTULOS NECESARIOS
+	
+	% BIBLIOGRAFÍA
+	\bibliographystyle{ieeetr}
+	\addcontentsline{toc}{chapter}{\bibname}
+	\bibliography{bibliographyfile}
+
+	% ANEXOS
+	\begin{appendices}
+	\appendixpageoff
+	\renewcommand\appendixname{Anexo}
+	\renewcommand\chaptername{Anexo}
+	\include{AnexA}
+    \end{appendices}
+\end{document}

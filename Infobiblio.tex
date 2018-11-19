@@ -1,0 +1,28 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = GANXXX.tex
+% !TeX spellcheck = es_ES
+%%=========================================	
+\addcontentsline{toc}{chapter}{Información sobre la bibliografía}
+\chapter*{Información sobre la bibliografía}
+Todos los documentos técnicos (Trabajo Fin de Grado, Tesis Doctoral, Artículo Técnico o Científico, Memoria, etc.) deben incluir una sección de bibliografía en la cual se hace un listado de todas las fuentes consultadas para realizar el trabajo. Es preciso otorgar el crédito a los trabajos realizados por otros y que se utilizan de algún modo u otro en el trabajo propio. Por esta razón, en el texto se deben incluir las referencias a las fuentes empleadas intentando incurrir en plagio, aún cuando ésta no sea nuestra intención. Se citará usando \lstinline!\cite{einstein}! \cite{einstein}.
+
+
+Todas las fuentes utilizadas deberían ser referenciadas en nuestro trabajo. Estas fuentes pueden ser:
+
+\begin{itemize}
+	\item Un libro o capítulo de libro
+	\item Un artículo de revista
+	\item Un artículo de congreso
+	\item Un manual técnico
+	\item Un trabajo anterior (Fin de Grado, Fin de Máster, Tesis Doctoral, etc.)
+	\item Un enlace virtual (Wikipedia, etc.)
+\end{itemize}
+
+Se recomienda usar para la bibliografía programas como ``JabRef'' o ``BibTex'' para gestionar las referencias. El estilo más extendido en publicaciones es el IEEEtran, que en \LaTeX $ $ se denomina \texttt{ieeetr}. Aparecen listados los trabajos a medida que se van citando, tal y como se puede comprobar \cite{knuthwebsite} en la siguiente página. Con este tipo de bibliografía, no aparecerán los trabajos hasta que éstos sean citados.
+
+El siguiente código genera la bibliografía
+\begin{lstlisting}
+	\bibliographystyle{ieeetr}
+	\addcontentsline{toc}{chapter}{\bibname}
+	\bibliography{refsreal}  
+\end{lstlisting}

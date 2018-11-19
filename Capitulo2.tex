@@ -1,0 +1,18 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = GANXXX.tex
+% !TeX spellcheck = es_ES
+%%=========================================	
+\chapter{Otro capítulo}
+Se aprovecha esta sección para dar algunos consejos respecto a la redacción de textos con \LaTeX.
+\begin{itemize}
+	\item La distribución de \LaTeX usada en este documento es MikTeX 2.9. Se recomienda usar esta versión frente a LiveTeX para evitar posibles errores al compilar.
+	\item El compilador es el que trae TeXStudio por defecto: pdfLaTeX.
+	\item Un editor muy usado y disponible en Windows, Mac y Linux es TeXstudio. Facilita ciertas operaciones como crear un \texttt{environment}, alineación de tablas, etc. A veces es necesario limpiar los archivos auxiliares que se generan para que el documento se compile más rápido. En TeXstudio, se hace en Tools >  Limpiar archivos auxiliares.
+	\item Este documento ha sido dividido en capítulos, por lo que no será necesario compilar todos ellos cuando se esté trabajando en uno. Fácilmente se podrá incluir o no el capítulo usando el comando \lstinline!\include{CapituloX}! en la raíz del documento. Los nombres de los archivos deben NO incluir espacios.
+	\item Se deberá hacer referencias a figuras, tablas, ecuaciones o incluso apartados durante el documento. Por ello, es recomendable usar el comando \lstinline!\label{eq: deformada}! para asignar una etiqueta al objeto a referenciar, mientras que usaremos \lstinline!\ref{eq: deformada}! para que se imprima la referencia. Los prefijos ``eq:'', ``fig:'', ``tab'' son muy útiles para no confundir referencias.
+	\item Se pueden incluir pies de página\footnote{Tales como éste.} mediante el comando \lstinline!\footnote{Texto que se quiera mostar}! para realizar aclaraciones.
+	\item Se recuerda que para poner alguna palabra entre comillas se usarán dos acentos graves al comienzo de la frase (\lstinline!``!) y dos apóstrofos al final (\lstinline!''!).
+	\item Para realizar una lista de términos y acrónimos (lo cual se recomienda), una manera alternativa a \lstinline!\makeglossary! es incluir un capítulo sin numeración debajo de ``Agradecimientos'' que se llame ``Términos y Acrónimos'' y pegar una tabla sin bordes que se haya realizado y ordenado alfabéticamente en un Excel. Sería una tabla de dos columnas, con el acrónimo a la izquierda y su definición a la derecha.
+\end{itemize}
+
+
