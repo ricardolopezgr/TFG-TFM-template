@@ -1,4 +1,16 @@
-# Estilo del texto
+# Plantilla TFG/TFM de la ETSIN-UPM
+Plantilla en LaTeX para el Trabajo de Fin de Grado (TFG) o Trabajo de Fin de Máster (TFM) de la Escuela Técnica Superior de Ingenieros Navales de la Universidad Politécnica de Madrid (ETSIN-UPM). Contiene la estructura básica para la memoria del mismo, siguiendo la [plantilla  en Microsoft Word](http://www.etsin.upm.es/Escuela/Estudios/Master/Master_en_Ingenieria_Naval_y_Oceanica?prefmt=articulo&fmt=detail&id=4ca686862ecd0510VgnVCM10000009c7648a____) propuesta.
+
+## Autor
+Este proyecto ha sido desarrollado por Ricardo López García ([@ricardolopezgr](https://github.com/ricardolopezgr)).
+
+## Licencia
+El código fuente se ha publicado bajo la [licencia MIT](https://github.com/ricardolopezgr/TFG-TFM-template/blob/master/LICENSE).  Los logos utilizados pertenecen a la [Escuela Técnica Superior de Ingenieros Navales](http://www.etsin.upm.es/) de la [Universidad Politécnica de Madrid](http://www.upm.es/).
+
+## Contribuir
+Si encuentras algún error o posible mejora no dudes en abrir una `Issue` o `Pull Request`.
+
+## Estilo del texto
 
 En este capítulo se presenta el estilo general del texto que se
 desarrollará en formato de página A4. Se ha optado por un estilo
@@ -12,21 +24,21 @@ deja, si es necesario, la página anterior vacía.
 Pueden desarrollarse los contenidos con distintos subapartados. Se trata
 en este documento de mostrar el formato elegido.
 
-## El texto
+### El texto
 
 Se han de escribir las principales ideas, métodos, elementos de cálculo
 y de diseño utilizados. Recuerde que el número de páginas es limitado.
 
-### Secciones y sub-secciones
+#### Secciones y sub-secciones
 
 No conviene expandir más del nivel de sub-sección la estructura del
 texto.
 
-## Los elementos gráficos
+### Los elementos gráficos
 
 En este documento sólo se ofrece formato a las figuras y tablas.
 
-### Figuras
+#### Figuras
 
 Las figuras se numeran automáticamente con el número de capítulo seguida
 del número de figura en orden creciente. Su título está centrado y
@@ -72,7 +84,7 @@ Para colocar varias gráficas, se recurre al entorno `minipage`.
 Se recuerda que ambas gráficas deben estar muy relacionadas para
 mostrarse juntas.
 
-## Tablas
+### Tablas
 
 Las tablas se numeran también con el número del capítulo seguido del
 número de tabla en orden creciente. El título está centrado y en la
@@ -113,7 +125,7 @@ código mediante la macro
 [Excel2LaTeX](https://ctan.org/pkg/excel2latex?lang=en). Existen
 opciones similares para LibreOffice.
 
-## Ecuaciones
+### Ecuaciones
 
 Para las ecuaciones, se pueden escribir en el modo “en línea” ,
 produciendo el siguiente resultado \(c^2=b^2+a^2\) o bien numerándose
@@ -133,7 +145,7 @@ como se muestra a continuación.
 Existen numerosos recursos en línea para editar las ecuaciones
 fácilmente. Se recomienda [HostMath](http://www.hostmath.com/).
 
-# Algoritmos
+## Algoritmos
 
 Para la exposición de un algoritmo u otro procedimiento que se requiera
 para la puesta en marcha, fabricación, proceso, etc. se puede recurrir
@@ -141,12 +153,12 @@ al formato que se encuentra en el Anexo (ver GANXXX.pdf). Nótese
 que no se recomienda incluir código de programación o similares en el
 cuerpo del documento.
 
-# Otros elementos
+## Otros elementos
 
 Se incluyen aquí otros elementos sujetos a formato como pueden ser los
 siguientes.
 
-## Listas enumeradas
+### Listas enumeradas
 Se generan del siguiente modo:
 ```TeX
 \begin{enumerate}
@@ -166,7 +178,7 @@ Que produce:
 
 4.  hasta el último
 
-## Viñetas
+### Viñetas
 Se generan como:
 ```TeX
 \begin{itemize}
@@ -186,7 +198,7 @@ Dando como resultado:
 
   - hasta el último
   
-  # Consejos
+  ## Consejos
 Se aprovecha esta sección para dar algunos consejos respecto a la
 redacción de textos con LaTeX.
 
@@ -231,7 +243,7 @@ redacción de textos con LaTeX.
     dos columnas, con el acrónimo a la izquierda y su definición a la
     derecha.
 
-# Información sobre la bibliografía
+## Información sobre la bibliografía
 Todos los documentos técnicos (Trabajo Fin de Grado, Tesis Doctoral,
 Artículo Técnico o Científico, Memoria, etc.) deben incluir una sección
 de bibliografía en la cual se hace un listado de todas las fuentes
