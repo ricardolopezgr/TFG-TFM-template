@@ -36,8 +36,6 @@ texto.
 
 ### Los elementos gráficos
 
-En este documento sólo se ofrece formato a las figuras y tablas.
-
 #### Figuras
 
 Las figuras se numeran automáticamente con el número de capítulo seguida
@@ -143,7 +141,7 @@ como se muestra a continuación.
 </p> 
  
 Existen numerosos recursos en línea para editar las ecuaciones
-fácilmente. Se recomienda [HostMath](http://www.hostmath.com/).
+fácilmente. Se recomienda [HostMath](http://www.hostmath.com/) o [Demo MathType](http://www.wiris.com/editor/demo/en/developers#mathml-latex).
 
 ## Algoritmos
 
@@ -251,7 +249,7 @@ consultadas para realizar el trabajo. Es preciso otorgar el crédito a
 los trabajos realizados por otros y que se utilizan de algún modo u otro
 en el trabajo propio. Por esta razón, en el texto se deben incluir las
 referencias a las fuentes empleadas intentando incurrir en plagio, aún
-cuando ésta no sea nuestra intención. Se citará usando `cite{}` .
+cuando ésta no sea nuestra intención. Se citará usando `\cite{}` .
 
 Todas las fuentes utilizadas deberían ser referenciadas en nuestro
 trabajo. Estas fuentes pueden ser:
@@ -281,5 +279,5 @@ El siguiente código genera la bibliografía (incluido en el archivo GANXXX.tex)
 ```TeX 
     \bibliographystyle{ieeetr}
     \addcontentsline{toc}{chapter}{\bibname}
-    \bibliography{refsreal}  
+    \bibliography{bibliographyfile}  
 ```
