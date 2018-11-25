@@ -188,9 +188,9 @@ Se generan como:
 ```
 Dando como resultado:
 
-  - Primer elemento numerado.
+  - Primer elemento.
 
-  - Segundo elemento numerado.
+  - Segundo elemento.
 
   - ...
 
@@ -212,6 +212,8 @@ redacción de textos con LaTeX.
     auxiliares que se generan para que el documento se compile más
     rápido. En TeXstudio, se hace en Tools \> Limpiar archivos
     auxiliares.
+    
+  - Como alternativa se puede usar [Overleaf](https://www.overleaf.com/), que permite realizar documentos en la web sin tener que 	instalar nada. Esta opción es muy interesante porque puedes trabajar desde cualquier lugar teniendo los archivos en línea creando una cuenta. No obstante, tiene sus limitaciones y para el documento final se recomienda una versión de escritorio.
 
   - Este documento ha sido dividido en capítulos, por lo que no será
     necesario compilar todos ellos cuando se esté trabajando en uno.
